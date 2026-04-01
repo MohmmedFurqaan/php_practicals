@@ -14,7 +14,7 @@
   <img width="986" height="638" alt="image" src="https://github.com/user-attachments/assets/399222a9-4e54-4bbd-9250-2aed8ed2e400" />
 
 * clone the repo :
-  ```git clone https://github.com/MohmmedFurqaan/php_workspace.git```
+  ```git clone https://github.com/MohmmedFurqaan/php_practicals.git```
 
 * go to the php_workspace
   ```cd php_workspace```
