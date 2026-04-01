@@ -25,7 +25,7 @@ if (isset($_POST['send'])) {
         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                // Enable SMTP authentication
         $mail->Username   = 'furqaan.devspace2007@gmail.com';                  // SMTP username
-        $mail->Password   = 'gxji zgzm ekcg tkly';                      // SMTP password (as requested)
+        $mail->Password   = 'PLACE YOUR APP PASSWORD';                      // SMTP password (as requested)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Enable implicit TLS encryption
         $mail->Port       = 465;                                 // TCP port to connect to
 

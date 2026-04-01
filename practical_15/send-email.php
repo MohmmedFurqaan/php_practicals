@@ -18,7 +18,7 @@ $mail->isSMTP();
 $mail->Host	= 'smtp.gmail.com';
 $mail->SMTPAuth	= true;
 $mail->Username	= 'furqaan.devspace2007@gmail.com';
-$mail->Password	= 'gxji zgzm ekcg tkly'; // Ensure this is a valid App Password
+$mail->Password	= 'place your App password'; // Ensure this is a valid App Password
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port	= 587;
 
