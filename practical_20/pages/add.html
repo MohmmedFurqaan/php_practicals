@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | Add</title>
+</head>
+<body>
+    <h1>Fill the form to add Blogs</h1>
+
+    <form action="../add_blogs.php" method="post">
+
+        <!-- for blog id -->
+        <label for="id">Enter blog id : </label>
+        <input type="text" name="id" required>
+        <br>
+        <br>
+
+
+        <!-- for Blog title -->
+        <label for="title">Enter title for blog : </label>
+        <input type="text" name="title" required>
+        <br>
+        <br>
+
+        <!-- for content -->
+        <label for="content">Enter blog content</label>
+        <textarea name="content" rows="4" cols="50" placeholder="Enter your blog content"></textarea>
+        <br>
+
+        <br>
+
+        <!-- submit button -->
+        <input type="submit" value="press to add blog" name="submit">
+
+
+
+
+
+    </form>
+</body>
+</html>

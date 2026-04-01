@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <h2>User Feedback Form</h2>
+
+    <form action="submit.php" method="POST">
+        <label>Name:<br>
+            <input type="text" name="name" required>
+        </label><br><br>
+
+        <label>Email:<br>
+            <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>Feedback:<br>
+            <textarea name="feedback" rows="5" cols="40" required></textarea>
+        </label><br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+
+</html>
