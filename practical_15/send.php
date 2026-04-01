@@ -20,7 +20,7 @@ if (isset($_POST['send'])) {
 
     try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output for diagnosing authentication error
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                     
         $mail->isSMTP();                                         // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                // Enable SMTP authentication
