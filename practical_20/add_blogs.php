@@ -17,7 +17,6 @@
 
         if (mysqli_query($conn, $INSERT_QUERY)) {
             echo "Blog added successfully!";
-            echo "<script>window.location.href = '/practical_20/view_blogs.php';</script>";
             exit; 
         } else {
             echo "Error adding blog: " . mysqli_error($conn);
