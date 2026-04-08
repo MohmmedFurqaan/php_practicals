@@ -18,6 +18,14 @@ class Contact {
         return $this->conn->query("SELECT * FROM contacts");
     }
 
+    // READ (Single)
+    public function getById($id) {
+        $stmt = $this->conn->prepare("SELECT * FROM contacts WHERE id=?");
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        return $stmt->get_result()->fetch_assoc();
+    }
+
     // SEARCH
     public function search($keyword) {
         $stmt = $this->conn->prepare("SELECT * FROM contacts WHERE name LIKE ?");

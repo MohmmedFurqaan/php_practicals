@@ -16,6 +16,10 @@ class ContactController {
         return $this->model->read();
     }
 
+    public function getById($id) {
+        return $this->model->getById($id);
+    }
+
     public function search($keyword) {
         return $this->model->search($keyword);
     }

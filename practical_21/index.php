@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "database_Config.php";
 require_once "Contact_Controller.php";
 
@@ -8,6 +9,28 @@ $controller = new ContactController($db);
 // ADD
 if (isset($_POST['add'])) {
     $controller->add($_POST);
+}
+
+// UPDATE
+if (isset($_POST['update'])) {
+    $_SESSION['edit_id'] = $_POST['id'];
+}
+
+// SAVE UPDATE
+if (isset($_POST['save_update']) && isset($_SESSION['edit_id'])) {
+    $data = array(
+        'id' => $_SESSION['edit_id'],
+        'name' => $_POST['name'],
+        'email' => $_POST['email'],
+        'phone' => $_POST['phone']
+    );
+    $controller->update($data);
+    unset($_SESSION['edit_id']);
+}
+
+// CANCEL UPDATE
+if (isset($_POST['cancel_update'])) {
+    unset($_SESSION['edit_id']);
 }
 
 // DELETE
