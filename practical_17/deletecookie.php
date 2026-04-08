@@ -8,5 +8,5 @@ if (isset($_COOKIE["username"])) {
     echo "No Cookie available to delete";
  
     }
-    echo "<br><br><a href='index.php'>Go Back</a>";
+    echo "<br><br><a href='index.php'>Go Back to home</a>";
 ?>
